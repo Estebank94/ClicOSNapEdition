@@ -19,6 +19,8 @@ char buffer[MAX_SIZE]={0};
       printf("date               : Muestra la fecha actual.\n");
       printf("echo [message]     : Muestra una linea de texto [message].\n");
       printf("exit               : Cierra la consola.\n");
+      printf("graph              : Cierra la consola.\n");
+      printf("divide             : prueba dividir por 0.\n");
       printf("help               : Muestra el manual de ayuda.\n");
       printf("hour               : Muestra la hora actual.\n");
       printf("sleep              : La consola espera durante un tiempo.\n");
@@ -35,8 +37,8 @@ char buffer[MAX_SIZE]={0};
     }else if(strcmp(buffer,"sleep")==0){
       sleep(2400);
       printf("Dormi 10 segundos.\n");
-    }else if(strcmp(buffer,"mac")==0){
-      printf("MAC ADDRESS: ");
+    }else if(strcmp(buffer,"divide")==0){
+      printf("Dividiendo 5 por 0 ");
       // print_mac();
     }else if(strncmp(buffer,"wall ",5)==0){
       // send_message_broadcast(buffer+5);
