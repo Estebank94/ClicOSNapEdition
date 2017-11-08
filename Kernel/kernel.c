@@ -9,7 +9,6 @@
 #include <rtc.h>
 #include  "include/timerTick.h"
 #include <pci.h>
-#include <rtl_driver.h>
 
 extern uint8_t text;
 extern uint8_t rodata;
@@ -95,7 +94,6 @@ int main()
 	start_video_mode();
 	set_idt();
 	initialize_device(0,0x18);
-	start_rtl();
 	codeModule();
 
 	while(1){
